@@ -1,0 +1,3 @@
+Vehiculo{id=1, marca=kyb, modelo=47}
+Vehiculo{id=1, marca=kyb, modelo=47}
+Patinete{velocidad_Max=0.0}
