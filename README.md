@@ -1,12 +1,11 @@
 👋 Sobre mí
 
-Soy Carlos Muñoz Cano, un Técnico Superior en Desarrollo de Aplicaciones Web (DAW) con una sólida base en tecnologías web y desarrollo de software. He completado todas las asignaturas de mi formación y actualmente me encuentro en búsqueda activa de prácticas laborales para aplicar mis conocimientos y seguir creciendo profesionalmente.
-
-Aunque mi principal interés es el desarrollo en Java, me considero un profesional versátil con experiencia en JavaScript, Python y PHP, así como en bases de datos SQL. Mi objetivo es especializarme en backend con Java sin dejar de explorar otras tecnologías y lenguajes.
+Soy Carlos Muñoz Cano, un Técnico Superior en Desarrollo de Aplicaciones Web (DAW) con una sólida base en tecnologías web y desarrollo de software. 
+Actualmente trabajo desarrollando en PHP, me considero un profesional versátil con experiencia en JavaScript, React Python, PHP y Java, así como en bases de datos SQL. Actualmente trabajo como desarrollador fullstack junior.
 
 🔧 Tecnologías y Habilidades
 
-Lenguajes de Programación: Java, JavaScript, Python, PHP, C
+Lenguajes de Programación: PHP, JavaScript, React, Python, Java, C
 
 Bases de Datos: MySQL, Oracle SQL, PL/SQL
 
