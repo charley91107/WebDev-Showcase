@@ -1,4 +1,4 @@
-import { heroes } from "../data/heroes.data";
+import { heroes, Owner } from "../data/heroes.data";
 
 export const getHeroByOwner = ( owner: Owner ) => {
 
@@ -6,4 +6,4 @@ export const getHeroByOwner = ( owner: Owner ) => {
     return heroByOwner
 }
 
-console.log(getHeroByOwner('DC'));
+console.log(getHeroByOwner(Owner.DC));

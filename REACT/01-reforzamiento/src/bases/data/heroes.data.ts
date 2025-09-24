@@ -4,12 +4,10 @@ export interface Hero {
     owner: string,
 }
 
-//type Owner = 'DC' | 'Marvel';
 export enum Owner {
     DC = 'DC',
     Marvel = 'Marvel',
 }
-
 
 export const heroes: Hero[] = [
     {
