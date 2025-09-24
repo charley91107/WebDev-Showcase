@@ -1,4 +1,4 @@
-import './bases/08-import-export';
+import './bases/11-async-await';
 import './style.css';
 
 //import { Owner } from './bases/data/heroes.data';

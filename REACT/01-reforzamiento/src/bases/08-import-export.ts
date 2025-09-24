@@ -1,4 +1,4 @@
-import { heroes, type Hero, Owner } from './data/heroes.data';
+import { heroes, type Hero  } from './data/heroes.data';
 
 
 const getHeroById = (id: number): Hero | undefined => {
