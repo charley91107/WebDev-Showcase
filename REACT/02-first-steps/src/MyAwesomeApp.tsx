@@ -2,7 +2,7 @@ import type { CSSProperties } from 'react';
 
 export function MyAwesomeApp() {
     const lastName = "Muñoz";
-    const firstName = " Carlos";
+    const firstName = "Carlos";
 
     const favoriteGames = [
         "The Legend of Zelda",
@@ -23,15 +23,15 @@ export function MyAwesomeApp() {
     }
 
     return(
-        <>
+        <div data-testid ="div-app">
             <h1 data-testid ="first-name-title">{firstName}</h1>
             <h3>{ lastName }</h3>
 
-            <p>{ favoriteGames.join(", ") }</p>
+            <p className="mi-clase-favorita">{ favoriteGames.join(", ") }</p>
             <p>{2 + 2}</p>
 
             <h1>{ isActive ? "Active" : "Inactive"}</h1>
             <p style={myStyles}>{JSON.stringify(address)}</p>
-        </>
+        </div>
     )
 }
