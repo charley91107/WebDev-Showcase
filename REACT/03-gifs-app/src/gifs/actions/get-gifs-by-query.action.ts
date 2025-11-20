@@ -1,23 +1,32 @@
-import axios from "axios";
+import { giphyApi } from "../api/giphy.api";
 import type { Gif } from "../interfaces/gif.interface";
+import type { GiphyResponse } from "../interfaces/giphy.response";
 
-const api = axios.create({
-    baseURL: "https://api.giphy.com/v1/gifs",
-});
 
 export const getGifsByQuery = async (query: string): Promise<Gif[]> => {
-    const { data } = await api.get("/search", {
-    params: {
-        api_key: "PQxOFqchh0Ydx5ye6tSm9oj4d3PeeRc5",
-        q: query,
-        limit: 10,
-        lang: "es",
-    },
-    });
+    if (query.trim().length === 0) {
+        return [];
+    }
 
-    return data.data.map((gif: any) => ({
-    id: gif.id,
-    title: gif.title,
-    url: gif.images.downsized_medium.url,
-    }));
+    try {
+        const response = await giphyApi<GiphyResponse>('/search', {
+            params: {
+                q: query,
+                limit: 10,
+            },
+        });
+
+        return response.data.data.map((gif) => ({
+        id: gif.id,
+        title: gif.title,
+        url: gif.images.downsized_medium.url,
+        width: Number(gif.images.original.width),
+        height: Number(gif.images.original.height)
+        }));
+    } catch (error) {
+        console.error(error);
+        return[];
+    }
+
+    
 };
